@@ -122,6 +122,9 @@ body {
     font-weight: 500;
     box-shadow: 0px 2px 5px gray;
 }
+.btn-primary span{
+    padding-left: 10px;
+}
 
 /* online-platform */
 .online-platform {
@@ -217,6 +220,9 @@ body {
     margin-top: 35px;
     padding-right: 5px;
 }
+.see-more-btn span{
+    padding-left: 10px;
+}
 
 /* feature part start */
 .feature-container {
@@ -254,7 +260,61 @@ body {
     font-size: 13px;
     border: none;
 }
+.btn-secondary span{
+    padding-left: 10px;
+}
 
+/* footer part start  */
+#footer-section {
+    background: #0A0826;
+    color: #fff;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-copyright,
+.small-text {
+    color: #9e9fa3;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0px;
+    /* margin-top: 20px; */
+}
+.footer-icon{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+}
+.footer-icon a{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; */
+    background-color: #323144;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/* .small-text {
+    } */
 
 /* responsivi part starts here */
 
@@ -262,18 +322,15 @@ body {
 @media screen and (max-width: 576px) {
 
     .nav-container,
-    .banner-container {
-        flex-direction: column;
+    .banner-container,
+    .feature-container {
+        flex-direction: column-reverse;
         max-width: 100%;
         /* gap: 20px; */
     }
 
     .nav-title {
         margin-bottom: 30px;
-    }
-
-    .banner-container {
-        flex-direction: column-reverse;
     }
 
     .banner-container,
@@ -334,4 +391,18 @@ body {
     .see-more-btn {
         margin-right: 25px;
     }
+
+    .feature-container {
+        text-align: center;
+        padding: 20px 45px;
+    }
+
+    .btn-secondary {
+        width: 230px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
 }
