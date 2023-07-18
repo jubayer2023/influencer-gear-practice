@@ -16,10 +16,6 @@ body {
 
 
 /* section width */
-.section-width {
-    max-width: 80%;
-    margin: 0 auto;
-}
 
 
 
@@ -134,8 +130,8 @@ body {
 }
 
 .online-platform-container {
-    /* max-width: 80%;
-    margin: 40px auto; */
+    max-width: 80%;
+    margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -155,14 +151,20 @@ body {
 /* .popular-collection-section{
     margin: 50px auto;
 } */
-.popular-collection-container{
+.popular-collection-section {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.popular-collection-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
     /* margin-top: 50px; */
 
 }
-.section-title{
+
+.section-title {
     text-align: center;
     font-size: 28px;
     font-weight: 800;
@@ -206,6 +208,53 @@ body {
     width: 80%;
     /* line-height: 150%; */
 }
+
+.see-more-btn {
+    text-align: right;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 35px;
+    padding-right: 5px;
+}
+
+/* feature part start */
+.feature-container {
+    max-width: 80%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.feature-img {
+    width: 100%;
+}
+
+.feature-title {
+    color: #0A0826;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.feature-description {
+    color: #6C6C6C;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 20px 0px;
+}
+
+.btn-secondary {
+    background: #E02C6D;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+}
+
 
 /* responsivi part starts here */
 
@@ -255,5 +304,34 @@ body {
     .online-platform-container {
         flex-basis: 14%;
         justify-content: center;
+    }
+
+    .popular-collection-section {
+        max-width: 100%;
+    }
+
+    .popular-collection-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .single-card {
+        padding: 20px 20px 25px 20px;
+        margin: 0px 15px;
+    }
+
+    .single-card .card-title {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .dollar {
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    .see-more-btn {
+        margin-right: 25px;
     }
 }
