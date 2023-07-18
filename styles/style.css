@@ -38,9 +38,7 @@ body {
 
 }
 
-.menu {
-    /* max-width: 50%; */
-}
+
 
 .menu .menu-list {
     display: flex;
@@ -127,10 +125,7 @@ body {
 }
 
 /* online-platform */
-.online-platform {
-    /* display: flex;
-    justify-content: space-between; */
-}
+
 
 .online-platform-container {
     max-width: 80%;
@@ -321,12 +316,14 @@ body {
 /* mobile-device */
 @media screen and (max-width: 576px) {
 
-    .nav-container,
+    .nav-container{
+        flex-direction: column;
+        max-width: 100%;
+    }
     .banner-container,
     .feature-container {
         flex-direction: column-reverse;
         max-width: 100%;
-        /* gap: 20px; */
     }
 
     .nav-title {
